@@ -12,6 +12,6 @@ import baseConfig from './.config/playwright.config';
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig<PluginOptions>(baseConfig, {
-  // Add your own configuration here.
-  // See https://grafana.com/developers/plugin-tools/how-to-guides/extend-configurations#extend-the-playwright-config for further info.
+  // Jest unit tests live under tests/unit and must not run in Playwright.
+  testIgnore: ['**/unit/**'],
 });
