@@ -17,10 +17,10 @@ describe('DataSource when execution fails with a plain value', () => {
     const source = new DataSource({
       id: 1,
       uid: 'multi',
-      type: 'local-multidatastore-datasource',
+      type: 'ucn-multidatastore-datasource',
       name: 'Multi Datastore',
       jsonData: {},
-      meta: { id: 'local-multidatastore-datasource' },
+      meta: { id: 'ucn-multidatastore-datasource' },
       access: 'proxy',
       readOnly: false,
     } as DataSourceInstanceSettings<MultiDataSourceOptions>);

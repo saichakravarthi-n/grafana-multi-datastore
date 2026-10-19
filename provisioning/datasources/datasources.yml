@@ -2,7 +2,7 @@ apiVersion: 1
 
 datasources:
   - name: Multi Datastore
-    type: local-multidatastore-datasource
+    type: ucn-multidatastore-datasource
     uid: multidatastore
     access: proxy
     isDefault: true
@@ -13,7 +13,7 @@ datasources:
       maxListSize: 1000
 
   - name: Multi Datastore Small Cap
-    type: local-multidatastore-datasource
+    type: ucn-multidatastore-datasource
     uid: multidatastore-cap
     access: proxy
     orgId: 1

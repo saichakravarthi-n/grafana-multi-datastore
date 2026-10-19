@@ -10,6 +10,9 @@ services:
         condition: service_healthy
     environment:
       GF_PLUGINS_PREINSTALL_AUTO_UPDATE: 'false'
+      GF_PLUGINS_ALLOW_LOADING_UNSIGNED_PLUGINS: ucn-multidatastore-datasource
+    volumes:
+      - ./dist:/var/lib/grafana/plugins/ucn-multidatastore-datasource
     build:
       args:
         grafana_image: grafana

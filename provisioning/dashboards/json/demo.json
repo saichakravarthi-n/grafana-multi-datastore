@@ -19,14 +19,14 @@
       "type": "table",
       "title": "Orders for active users",
       "description": "MySQL returns active user ids. PostgreSQL then loads orders whose user_id is in that list.",
-      "datasource": { "type": "local-multidatastore-datasource", "uid": "multidatastore" },
+      "datasource": { "type": "ucn-multidatastore-datasource", "uid": "multidatastore" },
       "gridPos": { "h": 8, "w": 12, "x": 0, "y": 0 },
       "fieldConfig": { "defaults": {}, "overrides": [] },
       "options": { "showHeader": true, "cellHeight": "sm", "footer": { "show": false } },
       "targets": [
         {
           "refId": "A",
-          "datasource": { "type": "local-multidatastore-datasource", "uid": "multidatastore" },
+          "datasource": { "type": "ucn-multidatastore-datasource", "uid": "multidatastore" },
           "steps": [
             {
               "id": "users",
@@ -51,14 +51,14 @@
       "type": "table",
       "title": "Dependency cycle",
       "description": "Each step reads the other, so the query stops before either database runs.",
-      "datasource": { "type": "local-multidatastore-datasource", "uid": "multidatastore" },
+      "datasource": { "type": "ucn-multidatastore-datasource", "uid": "multidatastore" },
       "gridPos": { "h": 8, "w": 12, "x": 12, "y": 0 },
       "fieldConfig": { "defaults": {}, "overrides": [] },
       "options": { "showHeader": true, "cellHeight": "sm", "footer": { "show": false } },
       "targets": [
         {
           "refId": "A",
-          "datasource": { "type": "local-multidatastore-datasource", "uid": "multidatastore" },
+          "datasource": { "type": "ucn-multidatastore-datasource", "uid": "multidatastore" },
           "steps": [
             {
               "id": "users",
@@ -83,14 +83,14 @@
       "type": "table",
       "title": "Value list over the limit",
       "description": "This data source allows one value. The active-user query returns two, so the second step is rejected.",
-      "datasource": { "type": "local-multidatastore-datasource", "uid": "multidatastore-cap" },
+      "datasource": { "type": "ucn-multidatastore-datasource", "uid": "multidatastore-cap" },
       "gridPos": { "h": 8, "w": 12, "x": 0, "y": 8 },
       "fieldConfig": { "defaults": {}, "overrides": [] },
       "options": { "showHeader": true, "cellHeight": "sm", "footer": { "show": false } },
       "targets": [
         {
           "refId": "A",
-          "datasource": { "type": "local-multidatastore-datasource", "uid": "multidatastore-cap" },
+          "datasource": { "type": "ucn-multidatastore-datasource", "uid": "multidatastore-cap" },
           "steps": [
             {
               "id": "users",
