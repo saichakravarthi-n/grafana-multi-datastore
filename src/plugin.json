@@ -15,7 +15,16 @@
       "large": "img/logo.svg"
     },
     "links": [],
-    "screenshots": [],
+    "screenshots": [
+      {
+        "name": "Orders for active users",
+        "path": "img/orders.png"
+      },
+      {
+        "name": "Query editor",
+        "path": "img/query-editor.png"
+      }
+    ],
     "version": "%VERSION%",
     "updated": "%TODAY%"
   },
