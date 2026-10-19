@@ -4,6 +4,10 @@ Run a MySQL, PostgreSQL, or SQL Server query, then pass a column from that resul
 
 Each step uses a SQL data source you already configured in Grafana. This plugin does not store a database host, user, or password. If a later step contains a placeholder, the earlier step runs first and the placeholder becomes one comma-separated list of values.
 
+![Orders for active users](img/orders.png)
+
+![Query editor](img/query-editor.png)
+
 ```sql
 -- step id: users, data source: MySQL
 SELECT id FROM users WHERE active = 1
@@ -83,3 +87,7 @@ The Docker development stack includes a MySQL `users` table and a PostgreSQL `or
 ## Limit
 
 This data source cannot drive Grafana alert rules. The chain runs in the browser, and alerting runs on the Grafana server.
+
+## Source
+
+https://github.com/saichakravarthi-n/grafana-multi-datastore

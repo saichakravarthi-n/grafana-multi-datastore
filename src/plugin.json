@@ -9,12 +9,17 @@
     "author": {
       "name": "ucn"
     },
-    "keywords": ["datasource"],
+    "keywords": ["mysql", "postgresql", "sql server", "sql"],
     "logos": {
       "small": "img/logo.svg",
       "large": "img/logo.svg"
     },
-    "links": [],
+    "links": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/saichakravarthi-n/grafana-multi-datastore"
+      }
+    ],
     "screenshots": [
       {
         "name": "Orders for active users",
